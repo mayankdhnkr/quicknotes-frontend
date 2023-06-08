@@ -8,7 +8,6 @@ import Alert from "./components/Alert";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import UserDetail from "./components/UserDetail";
-const apiUrl = process.env.REACT_APP_API_URL;
 
 function App() {
     const [alert, setAlert] = useState(null);
