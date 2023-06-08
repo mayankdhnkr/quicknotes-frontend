@@ -40,7 +40,7 @@ const Login = (props) => {
     return (
         <div className="container">
             <form
-                className="mt-4 w-50 mx-auto border border-opacity-75 border-3 p-5"
+                className="mt-4 w-75 mx-auto border border-opacity-75 border-3 p-5"
                 onSubmit={handleSubmit}
             >
                 <h2 className="mb-3">Login</h2>

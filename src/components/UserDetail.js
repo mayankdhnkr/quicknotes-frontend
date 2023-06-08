@@ -25,12 +25,16 @@ const UserDetail = () => {
     };
 
   return (
-      <div className='container '>
-        <div className='mt-4 w-50 mx-auto border border-opacity-75 border-3 p-5'>
-          <h1 className='mb-4'>User Detail</h1>
-          <h4>Name : <span className='font-monospace'>{user.name}</span></h4>
-          <h4>Email : <span className='font-monospace'>{user.email}</span></h4>
-        </div>
+      <div className="container ">
+          <div className="mt-4 w-lg-75 mx-auto border border-opacity-75 border-3 p-5">
+              <h1 className="mb-4">User Detail</h1>
+              <h4>
+                  Name : <span className="font-monospace">{user.name}</span>
+              </h4>
+              <h4>
+                  Email : <span className="font-monospace">{user.email}</span>
+              </h4>
+          </div>
       </div>
   );
 }
