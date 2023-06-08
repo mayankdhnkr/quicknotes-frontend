@@ -1,7 +1,7 @@
 import React, { useState , useEffect } from 'react'
 
 const UserDetail = () => {
-    const host = "http://localhost:5000";
+    const host = process.env.REACT_APP_API_URL;
     
     const [user, setUser] = useState({name:"",email:""})
 

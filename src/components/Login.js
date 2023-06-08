@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Login = (props) => {
     let navigate = useNavigate();
 
-    const host = "http://localhost:5000";
+    const host = process.env.REACT_APP_API_URL;
 
     const [credentials, setCredentials] = useState({ email: "", password: "" });
     const onChange = (e) => {
@@ -24,7 +24,7 @@ const Login = (props) => {
             }),
         });
         const json = await response.json();
-        console.log(json);
+        // console.log(json);
 
         if (json.success) {
             // Save the auth token and redirect

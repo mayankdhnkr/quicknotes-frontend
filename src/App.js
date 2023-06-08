@@ -8,6 +8,7 @@ import Alert from "./components/Alert";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import UserDetail from "./components/UserDetail";
+const apiUrl = process.env.REACT_APP_API_URL;
 
 function App() {
     const [alert, setAlert] = useState(null);
@@ -28,11 +29,27 @@ function App() {
                     <div className="container">
                         <Alert alert={alert} />
                         <Routes>
-                            <Route exact path="/" element={<Home showAlert={showAlert} />} />
+                            <Route
+                                exact
+                                path="/"
+                                element={<Home showAlert={showAlert} />}
+                            />
                             <Route exact path="/about" element={<About />} />
-                            <Route exact path="/login" element={<Login showAlert={showAlert}/>} />
-                            <Route exact path="/signup" element={<Signup showAlert={showAlert}/>} />
-                            <Route exact path="/userdetail" element={<UserDetail/>} />
+                            <Route
+                                exact
+                                path="/login"
+                                element={<Login showAlert={showAlert} />}
+                            />
+                            <Route
+                                exact
+                                path="/signup"
+                                element={<Signup showAlert={showAlert} />}
+                            />
+                            <Route
+                                exact
+                                path="/userdetail"
+                                element={<UserDetail />}
+                            />
                         </Routes>
                     </div>
                 </Router>
